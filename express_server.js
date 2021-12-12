@@ -99,7 +99,7 @@ app.post("/urls", (request, response) => {
  });
  
 // reate New URL if user doesn't exist
- app.get('/urls/new', (request, response) => {
+app.get('/urls/new', (request, response) => {
   if (!request.session.userID) {
     return response.redirect(`/login`);
   }
@@ -111,7 +111,6 @@ app.post("/urls", (request, response) => {
   } 
   return response.render('urls_new', templateVars);
 
-  // redirect to (`/login`);
 });
 
  // key longURL = value of longURL through urlDatabase[shortURL]
@@ -278,3 +277,4 @@ app.get('/hello', (request, response) => {
 app.listen(PORT, () => {
   console.log(`Example app listenting on port ${PORT}`);
 });
+

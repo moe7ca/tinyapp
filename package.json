@@ -1,29 +1,31 @@
 {
   "name": "tinyapp",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "./node_modules/.bin/nodemon -L express_server.js",
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/moe7ca/tinyapp.git"
+    "url": "git+https://github.com/MorsalN/tinyapp.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/moe7ca/tinyapp/issues"
+    "url": "https://github.com/MorsalN/tinyapp/issues"
   },
-  "homepage": "https://github.com/moe7ca/tinyapp#readme",
+  "homepage": "https://github.com/MorsalN/tinyapp#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.6",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1"
   },
-  "description": "",
   "devDependencies": {
     "chai": "^4.3.4",
     "mocha": "^9.1.3",
